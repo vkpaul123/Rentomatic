@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/getUserJson/{id}', 'TestGetJSONWithURL@sendValuesOfUser');
+Route::get('/getUserRegisteredJson/{email}', 'CheckIfLoggedInController@checkRegistration');
 
 Auth::routes();
 
