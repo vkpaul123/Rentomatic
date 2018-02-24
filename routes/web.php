@@ -11,11 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'WelcomePageController@index');
 
+//	Test to get values is JSON
 Route::get('/getUserJson/{id}', 'TestGetJSONWithURL@sendValuesOfUser');
+
+//	URL to check if User is Registered or Not
 Route::get('/getUserRegisteredJson/{email}', 'CheckIfLoggedInController@checkRegistration');
 
 Auth::routes();
