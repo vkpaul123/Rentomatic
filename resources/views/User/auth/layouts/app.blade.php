@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	@include('JobSeeker.auth.layouts.headsection')
+	@include('User.auth.layouts.headsection')
 </head>
 <body class="hold-transition login-page">
 	<div class="login-box">
@@ -11,6 +11,6 @@
 		
 	</div>
 
-	@include('JobSeeker.auth.layouts.footersection')
+	@include('User.auth.layouts.footersection')
 </body>
 </html>

@@ -1,43 +1,13 @@
-@extends('JobSeeker.homepage.layouts.app')
-@section('title', 'JobSeekers')
+@extends('User.homepage.layouts.app')
+@section('title', 'User - Home')
 
-@section('extraPageSpecificHeadContent')
-<link rel="stylesheet" href="{{asset('assets/userPage/bower_components/select2/dist/css/select2.min.css')}}">
-
-<style type="text/css">
-[class^='select2'] {
-  border-radius: 0px !important;
-}
-
-.select2-container {
-  padding: 0px;
-  border-width: 0px;
-}
-.select2-container .select2-choice {
-  height: 38px;
-  line-height: 38px;
-}
-
-.select2-container.form-control {
-  height: auto !important;
-}
-
-.form-control{
-  -webkit-appearance:none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-}
-</style>
-@endsection
 
 @section('body')
 <!-- Content Header (Page header) -->
 <section class="content-header">
   <h1>
-    <span style="color:#367fa9;"><b>JobSeeker</b> </span> Home
-    <small>Timeline</small>
+    <span style="color:#367fa9;"><b>User</b> </span> Home
+    <small>Dashboard</small>
   </h1>
   <ol class="breadcrumb">
     <li class="active"><i class="fa fa-dashboard"></i> Home</li>
@@ -51,7 +21,7 @@
     <div class="box box-primary">
       <div class="box-header with-border">
         <a href="/home/vacancySearchResults">
-          <button class="btn btn-default btn-lg btn-block"><strong><i class="fa fa-search"></i>&nbsp &nbsp<span class="text-primary">Search Vacancies</span></strong></button>
+          <button class="btn btn-default btn-lg btn-block"><strong><i class="fa fa-search"></i>&nbsp &nbsp<span class="text-primary">Search Properties</span></strong></button>
         </a>
       </div>
     </div>
@@ -62,12 +32,12 @@
           <!-- timeline time label -->
           <li class="time-label">
             <span class="bg-red">
-              <strong>Employers</strong> that might Interest you
+              <strong>Properties</strong> that might Interest you
             </span>
           </li>
           <!-- /.timeline-label -->
           <!-- timeline item -->
-          @foreach ($popEmployers as $popEmployer)
+          {{-- @foreach ($popEmployers as $popEmployer)
           @if ($popEmployer->description)
           <li>
             <i class="fa fa-industry bg-yellow"></i>
@@ -89,32 +59,10 @@
           @if ($loop->index > 5)
           @break
           @endif
-          @endforeach
+          @endforeach --}}
           <!-- END timeline item -->
           <!-- timeline time label -->
-          <li class="time-label">
-            <span class="bg-green">
-              <strong>Vacancies</strong> that might Interest you
-            </span>
-          </li>
-          @foreach ($recVacancies as $recVacancy)
-          <li>
-            <i class="fa fa-briefcase bg-aqua"></i>
-
-            <div class="timeline-item">
-              <span class="time"><i class="fa fa-clock-o"></i> &nbsp{{$recVacancy->updated_at->diffForHumans() }}</span>
-
-              <h3 class="timeline-header no-border"><a href=""><strong class="text-blue">{{ $recVacancy->employers_id }}</strong></a> opened a new Vacancy for the post of <strong class="text-success">{{ $recVacancy->jobdesignation }}</strong></h3>
-              
-              <div class="timeline-footer">
-                <a class="btn btn-primary btn-xs" href="/home/viewVacancy/{{ $recVacancy->id }}">Read more</a>
-              </div>
-            </div>
-          </li>
-          @if ($loop->index > 5)
-          @break
-          @endif
-          @endforeach
+          
           <!-- /.timeline-label -->
           <li class="time-label">
             <span class="bg-purple">
@@ -122,7 +70,7 @@
             </span>
           </li>
           <!-- timeline item -->
-          @foreach ($jobApplications as $jobApplication)
+          {{-- @foreach ($jobApplications as $jobApplication)
           @foreach ($jobseekerProfiles as $jobseekerProfile)
           @if ($jobseekerProfile->id == $jobApplication->jobseeker_profile_id && ($jobApplication->applicationStatus == 'Rejected' || $jobApplication->applicationStatus == 'Approved'))
           <li>
@@ -142,7 +90,7 @@
           </li>
           @endif
           @endforeach
-          @endforeach
+          @endforeach --}}
           
           <li>
             <i class="fa-info fa bg-gray"></i>
@@ -152,11 +100,11 @@
                 View all your Job Applications in
                 
               </div>
-                <div class="timeline-footer">
+                {{-- <div class="timeline-footer">
                   <a href="{{ route('jobseeker.myJobApplications') }}">
                     <button class="btn btn-info"><strong>Job Applications</strong></button>
                   </a>
-                </div>
+                </div> --}}
             </div>
           </li>
 
@@ -169,7 +117,7 @@
       <!-- /.col -->
       <!-- /.row -->
 
-      <div class="col-md-4">
+      {{-- <div class="col-md-4">
         <div class="box box-success">
           <div class="box-header with-border">
             <h3>Recent Job Vacancies</h3>
@@ -183,9 +131,9 @@
             @endforeach
           </div>
         </div>
-      </div>
+      </div> --}}
 
-      <div class="col-md-4">
+      {{-- <div class="col-md-4">
         <div class="box box-warning">
           <div class="box-header with-border">
             <h3>Popular Employers</h3>
@@ -198,7 +146,7 @@
 
           </div>
         </div>
-      </div>
+      </div> --}}
 
     </div>
   </div>

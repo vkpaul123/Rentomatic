@@ -1,4 +1,4 @@
-@extends('JobSeeker.auth.layouts.app')
+@extends('User.auth.layouts.app')
 @section('title', 'Login')
 
 @section('body')

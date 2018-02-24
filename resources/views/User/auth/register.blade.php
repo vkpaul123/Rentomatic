@@ -1,4 +1,4 @@
-@extends('JobSeeker.auth.layouts.app')
+@extends('User.auth.layouts.app')
 @section('title', 'Register')
 
 @section('body')
@@ -9,7 +9,7 @@
 <!-- /.login-logo -->
 
 <div class="login-box-body">
-	<p class="login-box-msg"><b>Register</b> as New <span style="color: #367fa9; font-weight: bold;">JobSeeker</span>...</p>
+	<p class="login-box-msg"><b>Register</b> as New <span style="color: #367fa9; font-weight: bold;">Buyer</span>...</p>
 
 	<form action="{{ route('register') }}" method="post">
 	{{ csrf_field() }}

@@ -1,4 +1,4 @@
-@extends('JobSeeker.auth.layouts.app')
+@extends('User.auth.layouts.app')
 @section('title', 'Login')
 
 @section('body')
@@ -12,7 +12,7 @@
 	@if (Session::has('message'))
 		<div class="alert alert-success">{{ Session::get('message') }}</div>
 	@endif
-	<p class="login-box-msg"><b>Sign in</b> as <span style="color: #367fa9; font-weight: bold;">JobSeeker</span> to start your session...</p>
+	<p class="login-box-msg"><b>Sign in</b> as <span style="color: #367fa9; font-weight: bold;">Buyer</span> to start your session...</p>
 	
 	<form action="{{ route('login') }}" method="post">
 

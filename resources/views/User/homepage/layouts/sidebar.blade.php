@@ -27,7 +27,7 @@
           </span>
         </a>
         <ul class="treeview-menu">
-          <li><a href="{{ route('profile.index', Auth::user()->id) }}"><i class="fa fa-user"></i> View All Profile</a></li>
+          <li><a href="{{-- {{ route('profile.index', Auth::user()->id) }} --}}"><i class="fa fa-user"></i> View All Profile</a></li>
           <li><a href="/home/profile/create"><i class="fa fa-user-plus"></i> Create Profile</a></li>
         </ul>
       </li>
@@ -44,8 +44,8 @@
           <li><a href="/home/employerSearchResults"><i class="fa fa-industry"></i> Search Employer</a></li>
         </ul>
       </li>
-      <li><a href="{{ route('jobseeker.myJobApplications') }}"><i class="fa fa-black-tie"></i> <span>My Job Applications</span></a></li>
-      <li><a href="{{ route('profilePic.upload', Auth::user()->id ) }}"><i class="fa fa-gear"></i> <span>Account Settings</span></a></li>
+      <li><a href="{{-- {{ route('jobseeker.myJobApplications') }} --}}"><i class="fa fa-black-tie"></i> <span>My Job Applications</span></a></li>
+      <li><a href="{{-- {{ route('profilePic.upload', Auth::user()->id ) }} --}}"><i class="fa fa-gear"></i> <span>Account Settings</span></a></li>
       <li><a href="/home/contactAdmin"><i class="fa fa-life-buoy text-default"></i> <span>Contact Admin</span></a></li>
     </ul>
   </section>

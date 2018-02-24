@@ -24,7 +24,7 @@
             @else
             <img src="{{asset('assets/staticImages/user.png')}}" height="160px" width="160px" class="user-image" alt="User Image">
             @endisset
-            <span class="hidden-xs">{{ Auth::user()->firstname.' '.Auth::user()->lastname }}</span>
+            <span class="hidden-xs">{{-- {{ Auth::user()->firstname.' '.Auth::user()->lastname }} --}}{{ Auth::user()->name }}</span>
           </a>
           <ul class="dropdown-menu">
             <!-- User image -->
@@ -37,7 +37,7 @@
               @endisset
               
               <p>
-                <a href="{{ route('profilePic.upload', Auth::user()->id ) }}"><button class="btn btn-default btn-xs">Change Picture</button></a>
+                <a href="{{-- {{ route('profilePic.upload', Auth::user()->id ) }} --}}"><button class="btn btn-default btn-xs">Change Picture</button></a>
                 {{--  {{Auth::user()->name}} --}}
                 <small style="padding-top: 10px;">Member Since {{ Auth::user()->created_at->diffForHumans() }}</small>
               </p>
@@ -47,7 +47,7 @@
             <!-- Menu Footer-->
             <li class="user-footer">
               <div class="pull-left">
-                <a href="{{ route('profile.index', Auth::user()->id) }}" class="btn btn-default">Profile</a>
+                <a href="{{-- {{ route('profile.index', Auth::user()->id) }} --}}" class="btn btn-default">Profile</a>
               </div>
               <div class="pull-right">
                 <a href="{{ route('logout') }}"
