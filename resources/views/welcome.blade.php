@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Rentomatica
                 </div>
 
                 <div class="links">
