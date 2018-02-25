@@ -52,7 +52,13 @@
             <td>{{ $property->propertyType }}</td>
             <td>{{ $property->addressText }}, {{ $property->locality }}, {{ $property->landmark1 }}, {{ $property->landmark2 }}, {{ $property->street }}, {{ $property->district }}, {{ $property->city }} , {{ $property->state }}, {{ $property->pincode }}</td>
             <td>{{ $property->price }}</td>
-            <td>{{ $property->sold }}</td>
+            <td>
+              @if ($property->sold)
+                <span class="text-success">Renting</span>
+              @else
+                <span class="text-warning">Vacant</span>
+              @endif
+            </td>
             <td>
               <a href="{{ route('property.show', $property->id) }}">View</a> &nbsp | &nbsp
               <a href="">Delete</a>

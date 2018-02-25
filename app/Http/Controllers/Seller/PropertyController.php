@@ -155,7 +155,10 @@ class PropertyController extends Controller
      */
     public function edit($id)
     {
-        //
+        $property = Property::find($id);
+
+        return view('Seller.homepage.Property.editProperty')
+        ->with(compact('property'));
     }
 
     /**

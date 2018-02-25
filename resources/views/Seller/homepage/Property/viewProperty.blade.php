@@ -113,7 +113,11 @@
                     <span class="text-warning">Vacant</span>
                   @endif
                 </div>
+                
               </div>
+              <hr>
+              <a href="{{ route('property.edit', $property->id) }}" class="btn btn-block btn-warning"><strong>Edit Property</strong></a>
+              <a href="" class="btn btn-block btn-info"><strong>View All Requests</strong></a>
             </div>
           </div>
         </div>
