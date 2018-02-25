@@ -54,7 +54,7 @@
             <td>{{ $property->price }}</td>
             <td>{{ $property->sold }}</td>
             <td>
-              <a href="">View</a> &nbsp | &nbsp
+              <a href="{{ route('property.show', $property->id) }}">View</a> &nbsp | &nbsp
               <a href="">Delete</a>
             </td>
 

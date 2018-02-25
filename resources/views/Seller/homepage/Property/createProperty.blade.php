@@ -81,7 +81,7 @@
 			</center>
 			@endif
 
-			<form action="{{ route('property.store') }}" method="post" class="form-horizontal">
+			<form action="{{ route('property.store') }}" method="post" class="form-horizontal" enctype="multipart/form-data">
 				{{csrf_field()}}
 				
 				<h4><span style="color: #e08e0b;">General Details</span></h4>
@@ -223,7 +223,6 @@
 				
 
 				<hr>
-				<input type="hidden" name="id" value="{{ Auth::user()->id }}">
 				<div class="form-group{{ $errors->has('remember') ? ' has-error' : '' }}">
 					<div class="col-xs-10 col-md-offset-4">
 						<div class="checkbox icheck col-md-6">
