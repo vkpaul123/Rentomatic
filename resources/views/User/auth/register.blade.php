@@ -13,33 +13,25 @@
 
 	<form action="{{ route('register') }}" method="post">
 	{{ csrf_field() }}
-		<div class="form-group has-feedback{{ $errors->has('firstname') ? ' has-error' : '' }}">
-			<input type="text" name="firstname" class="form-control" placeholder="First Name" value="{{ old('firstname') }}" required autofocus>
+		<div class="form-group has-feedback{{ $errors->has('name') ? ' has-error' : '' }}">
+			<input type="text" name="name" class="form-control" placeholder="Name" value="{{ old('name') }}" required autofocus>
 			<span class="glyphicon glyphicon-user form-control-feedback"></span>
-			@if ($errors->has('firstname'))
+			@if ($errors->has('name'))
 			<span class="help-block">
-				<strong>{{ $errors->first('firstname') }}</strong>
+				<strong>{{ $errors->first('name') }}</strong>
 			</span>
 			@endif
 		</div>
-		<div class="form-group has-feedback{{ $errors->has('middlename') ? ' has-error' : '' }}">
-			<input type="text" name="middlename" class="form-control" placeholder="Middle Name" value="{{ old('middlename') }}" autofocus>
+		<div class="form-group has-feedback{{ $errors->has('phno') ? ' has-error' : '' }}">
+			<input type="text" name="phno" class="form-control" placeholder="Phone Number" value="{{ old('phno') }}" autofocus required minlength="10" maxlength="10">
 			<span class="glyphicon glyphicon-user form-control-feedback"></span>
-			@if ($errors->has('middlename'))
+			@if ($errors->has('phno'))
 			<span class="help-block">
-				<strong>{{ $errors->first('middlename') }}</strong>
+				<strong>{{ $errors->first('phno') }}</strong>
 			</span>
 			@endif
 		</div>
-		<div class="form-group has-feedback{{ $errors->has('lastname') ? ' has-error' : '' }}">
-			<input type="text" name="lastname" class="form-control" placeholder="Last Name" value="{{ old('lastname') }}" required autofocus>
-			<span class="glyphicon glyphicon-user form-control-feedback"></span>
-			@if ($errors->has('lastname'))
-			<span class="help-block">
-				<strong>{{ $errors->first('lastname') }}</strong>
-			</span>
-			@endif
-		</div>
+		
 		<div class="form-group has-feedback{{ $errors->has('email') ? ' has-error' : '' }}">
 			<input type="email" name="email" class="form-control" placeholder="Email" value="{{ old('email') }}" required autofocus>
 			<span class="glyphicon glyphicon-envelope form-control-feedback"></span>
@@ -71,13 +63,6 @@
 		</div>
 	</form>
 
-	<div class="social-auth-links text-center">
-		<p>- OR -</p>
-		<a href="#" class="btn btn-block btn-social btn-facebook"><i class="fa fa-facebook"></i> Sign in using Facebook</a>
-		<a href="#" class="btn btn-block btn-social btn-google"><i class="fa fa-google-plus"></i> Sign in using Google+</a>
-		<a href="#" class="btn btn-block btn-social btn-twitter"><i class="fa fa-twitter"></i> Sign in using Twitter</a>
-		<a href="#" class="btn btn-block btn-social btn-linkedin"><i class="fa fa-linkedin"></i> Sign in using LinkedIn</a>
-	</div>
 	<!-- /.social-auth-links -->
 
 </div>

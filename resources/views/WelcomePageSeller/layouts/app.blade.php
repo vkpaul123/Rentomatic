@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    @include('WelcomePageEmployer.layouts.headcontent')
+    @include('WelcomePageSeller.layouts.headcontent')
   </head>
 
   <body>
 
-    @include('WelcomePageEmployer.layouts.fixedNavBar')
+    @include('WelcomePageSeller.layouts.fixedNavBar')
 
     @section('body')
       @show
 
-    @include('WelcomePageEmployer.layouts.footer')
+    @include('WelcomePageSeller.layouts.footer')
 
-    @include('WelcomePageEmployer.layouts.indexPageScript')
+    @include('WelcomePageSeller.layouts.indexPageScript')
 
   </body>
 </html>

@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	@include('Employer.homepage.layouts.headcontent')
+	@include('Seller.homepage.layouts.headcontent')
 </head>
 <body class="hold-transition skin-yellow sidebar-mini">
 	<div class="wrapper">
-		@include('Employer.homepage.layouts.header')
+		@include('Seller.homepage.layouts.header')
 
-		@include('Employer.homepage.layouts.sidebar')
+		@include('Seller.homepage.layouts.sidebar')
 
 		<div class="content-wrapper">
 			@section('body')
 				@show
 		</div>
-		@include('Employer.homepage.layouts.footer')
+		@include('Seller.homepage.layouts.footer')
 	</div>
-	@include('Employer.homepage.layouts.loadscripts')
+	@include('Seller.homepage.layouts.loadscripts')
 </body>
 </html>

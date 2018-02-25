@@ -1,4 +1,4 @@
-@extends('Employer.auth.layouts.app')
+@extends('Seller.auth.layouts.app')
 @section('title', 'Login')
 
 @section('body')
@@ -12,7 +12,7 @@
 	</div>
 	@endif
 
-	<form action="{{ route('employer.password.request') }}" method="post">
+	<form action="{{ route('seller.password.request') }}" method="post">
 
 		{{ csrf_field() }}
 		<input type="hidden" name="token" value="{{ $token }}">

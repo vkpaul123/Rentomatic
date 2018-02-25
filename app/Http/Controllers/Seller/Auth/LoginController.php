@@ -1,9 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace App\Http\Controllers\Seller\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
@@ -25,7 +26,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/seller/home';
 
     /**
      * Create a new controller instance.
@@ -34,7 +35,7 @@ class LoginController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest')->except('logout');
+        $this->middleware('guest:seller')->except('logout');
     }
 
     /**
@@ -44,6 +45,20 @@ class LoginController extends Controller
      */
     public function showLoginForm()
     {
-        return view('User.auth.login');
+        return view('Seller.auth.login');
+    }
+
+    protected function guard()
+    {
+        return Auth::guard('seller');
+    }
+
+    public function logout(Request $request)
+    {
+        $this->guard()->logout();
+
+        $request->session()->invalidate();
+
+        return redirect('/seller');
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace App\Http\Controllers\User\Auth;
 
 use App\User;
 use App\Http\Controllers\Controller;
@@ -39,6 +39,11 @@ class RegisterController extends Controller
         $this->middleware('guest');
     }
 
+    public function showRegistrationForm()
+    {
+        return view('User.auth.register');
+    }
+
     /**
      * Get a validator for an incoming registration request.
      *
@@ -49,6 +54,7 @@ class RegisterController extends Controller
     {
         return Validator::make($data, [
             'name' => 'required|string|max:255',
+            'phno' => 'required|numeric|max:9999999999',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:6|confirmed',
         ]);
@@ -64,6 +70,7 @@ class RegisterController extends Controller
     {
         return User::create([
             'name' => $data['name'],
+            'phno' => $data['phno'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);

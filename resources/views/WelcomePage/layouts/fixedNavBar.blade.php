@@ -21,7 +21,7 @@
         </b></button></a></li>
         <li @yield('select_ABOUT')><a href="about">ABOUT</a></li>
         <li @yield('select_CONTACT')><a href="contact">CONTACT</a></li>
-        <li><a href="/employer"><button type="button" class="btn btn-warning btn-xs"><b>SELLER'S SECTION</b></button></a></li>
+        <li><a href="/seller"><button type="button" class="btn btn-warning btn-xs"><b>SELLER'S SECTION</b></button></a></li>
       </ul>
     </div><!--/.nav-collapse -->
   </div>

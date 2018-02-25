@@ -1,39 +1,39 @@
-@extends('Employer.auth.layouts.app')
+@extends('Seller.auth.layouts.app')
 @section('title', 'Register')
 
 @section('body')
 
 
 <div class="login-box-body">
-	<p class="login-box-msg"><b>Register</b> as New <span style="color: gold; font-weight: bold;">Employer</span>...</p>
+	<p class="login-box-msg"><b>Register</b> as New <span style="color: gold; font-weight: bold;">Seller</span>...</p>
 
-	<form action="{{ route('employer.register') }}" method="post">
+	<form action="{{ route('seller.register') }}" method="post">
 
 	{{ csrf_field() }}
-		<div class="form-group has-feedback{{ $errors->has('companyname') ? ' has-error' : '' }}">
-			<input type="text" name="companyname" class="form-control" placeholder="Company Name" value="{{ old('companyname') }}" required autofocus>
+		<div class="form-group has-feedback{{ $errors->has('name') ? ' has-error' : '' }}">
+			<input type="text" name="name" class="form-control" placeholder="Name" value="{{ old('name') }}" required autofocus>
 			<span class="glyphicon glyphicon-user form-control-feedback"></span>
-			@if ($errors->has('companyname'))
+			@if ($errors->has('name'))
 			<span class="help-block">
-				<strong>{{ $errors->first('companyname') }}</strong>
+				<strong>{{ $errors->first('name') }}</strong>
 			</span>
 			@endif
 		</div>
-		<div class="form-group has-feedback{{ $errors->has('firstname') ? ' has-error' : '' }}">
-			<input type="text" name="firstname" class="form-control" placeholder="First Name" value="{{ old('firstname') }}" required autofocus>
-			<span class="glyphicon glyphicon-user form-control-feedback"></span>
-			@if ($errors->has('firstname'))
+		<div class="form-group has-feedback{{ $errors->has('phno') ? ' has-error' : '' }}">
+			<input type="text" name="phno" class="form-control" placeholder="Phone Number" value="{{ old('phno') }}" required autofocus minlength="10" maxlength="10">
+			<span class="glyphicon glyphicon-phone form-control-feedback"></span>
+			@if ($errors->has('phno'))
 			<span class="help-block">
-				<strong>{{ $errors->first('firstname') }}</strong>
+				<strong>{{ $errors->first('phno') }}</strong>
 			</span>
 			@endif
 		</div>
-		<div class="form-group has-feedback{{ $errors->has('lastname') ? ' has-error' : '' }}">
-			<input type="text" name="lastname" class="form-control" placeholder="Last Name" value="{{ old('lastname') }}" required autofocus>
-			<span class="glyphicon glyphicon-user form-control-feedback"></span>
-			@if ($errors->has('lastname'))
+		<div class="form-group has-feedback{{ $errors->has('adharno') ? ' has-error' : '' }}">
+			<input type="text" name="adharno" class="form-control" placeholder="Adhar Card Number" value="{{ old('adharno') }}" required autofocus maxlength="12" minlength="12">
+			<span class="glyphicon glyphicon-credit-card form-control-feedback"></span>
+			@if ($errors->has('adharno'))
 			<span class="help-block">
-				<strong>{{ $errors->first('lastname') }}</strong>
+				<strong>{{ $errors->first('adharno') }}</strong>
 			</span>
 			@endif
 		</div>

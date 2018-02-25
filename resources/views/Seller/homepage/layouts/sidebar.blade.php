@@ -28,9 +28,9 @@
           </span>
         </a>
         <ul class="treeview-menu">
-          <li><a href="{{ route('employerProfile.show', Auth::user()->id) }}"><i class="fa fa-eye"></i> View Profile</a></li>
-          <li><a href="{{ route('employerProfile.edit', Auth::user()->id) }}"><i class="fa fa-pencil-square-o"></i> Edit Profile</a></li>
-          <li><a href="{{ route('employerAddress.show', Auth::user()->id) }}"><i class="fa fa-map-marker"></i> Edit Address</a></li>
+          <li><a href="{{-- {{ route('employerProfile.show', Auth::user()->id) }} --}}"><i class="fa fa-eye"></i> View Profile</a></li>
+          <li><a href="{{-- {{ route('employerProfile.edit', Auth::user()->id) }} --}}"><i class="fa fa-pencil-square-o"></i> Edit Profile</a></li>
+          <li><a href="{{-- {{ route('employerAddress.show', Auth::user()->id) }} --}}"><i class="fa fa-map-marker"></i> Edit Address</a></li>
         </ul>
       </li>
       <li><a href="/employer/jobseekerSearchResults"><i class="fa fa-search"></i> <span>Search JobSeekers</span></a></li>
@@ -43,11 +43,11 @@
           </span>
         </a>
         <ul class="treeview-menu">
-          <li><a href="{{ route('vacancy.create') }}"><i class="fa fa-circle-o"></i> Create New Vacancy</a></li>
-          <li><a href="{{ route('vacancies.index', Auth::user()->id) }}"><i class="fa fa-circle-o"></i> View All Vacancies</a></li>
+          <li><a href="{{-- {{ route('vacancy.create') }} --}}"><i class="fa fa-circle-o"></i> Create New Vacancy</a></li>
+          <li><a href="{{-- {{ route('vacancies.index', Auth::user()->id) }} --}}"><i class="fa fa-circle-o"></i> View All Vacancies</a></li>
         </ul>
       </li>
-      <li><a href="{{ route('questionnareBuilder.index') }}"><i class="fa fa-question"></i> <span>Questionnaire Builder</span></a></li>
+      <li><a href="{{-- {{ route('questionnareBuilder.index') }} --}}"><i class="fa fa-question"></i> <span>Questionnaire Builder</span></a></li>
       <li class="treeview">
         <a href="">
           <i class="fa fa-files-o"></i>
@@ -57,14 +57,14 @@
           </span>
         </a>
         <ul class="treeview-menu">
-          <li><a href="{{ route('employer.reports.vacancyDetails') }}"><i class="fa fa-circle-o"></i> My Vacancy Report</a></li>
-          <li><a href="{{ route('employer.reports.locationWiseVacancyReport') }}"><i class="fa fa-circle-o"></i> Location-wise Vacancies</a></li>
-          <li><a href="{{ route('employer.reports.showJobseekerReport') }}"><i class="fa fa-circle-o"></i> Jobseeker Profile Report</a></li>
-          <li><a href="{{ route('employer.reports.categoryWiseJobseekerProfileReport') }}"><i class="fa fa-circle-o"></i> Category-wise Jobseekers</a></li>
-          <li><a href="{{ route('employer.reports.locationWiseJobseekerProfileReport') }}"><i class="fa fa-circle-o"></i> Location-wise Jobseekers</a></li>
+          <li><a href="{{-- {{ route('employer.reports.vacancyDetails') }} --}}"><i class="fa fa-circle-o"></i> My Vacancy Report</a></li>
+          <li><a href="{{-- {{ route('employer.reports.locationWiseVacancyReport') }} --}}"><i class="fa fa-circle-o"></i> Location-wise Vacancies</a></li>
+          <li><a href="{{-- {{ route('employer.reports.showJobseekerReport') }} --}}"><i class="fa fa-circle-o"></i> Jobseeker Profile Report</a></li>
+          <li><a href="{{-- {{ route('employer.reports.categoryWiseJobseekerProfileReport') }} --}}"><i class="fa fa-circle-o"></i> Category-wise Jobseekers</a></li>
+          <li><a href="{{-- {{ route('employer.reports.locationWiseJobseekerProfileReport') }} --}}"><i class="fa fa-circle-o"></i> Location-wise Jobseekers</a></li>
         </ul>
       </li>
-      <li><a href="{{ route('logo.upload', Auth::user()->id ) }}"><i class="fa fa-gear"></i> <span>Account Settings</span></a></li>
+      <li><a href="{{-- {{ route('logo.upload', Auth::user()->id ) }} --}}"><i class="fa fa-gear"></i> <span>Account Settings</span></a></li>
       <li><a href="/employer/home/contactAdmin"><i class="fa fa-life-bouy"></i> <span>Contact Admin</span></a></li>
     </ul>
   </section>

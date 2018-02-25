@@ -1,4 +1,4 @@
-@extends('WelcomePageEmployer.layouts.app')
+@extends('WelcomePageSeller.layouts.app')
 @section('title', 'About')
 
 @section('select_HOME', '')
@@ -74,7 +74,7 @@
 				</center>
 			@endif
  			<div class="hline"></div><br><br>
- 			<form method="post" action="{{ route('allUsers.sendMessage') }}">
+ 			<form method="post" action="{{-- {{ route('allUsers.sendMessage') }} --}}">
  				{{ csrf_field() }}
  				<div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
  					<label for="name" class="control-label">Your Name</label>

@@ -10,4 +10,12 @@ class WelcomePageController extends Controller
     {
     	return view('WelcomePage.index');
     }
+
+    public function about() {
+    	return view('WelcomePage.about');
+    }
+
+    public function contact() {
+    	return view('WelcomePage.contact');
+    }
 }

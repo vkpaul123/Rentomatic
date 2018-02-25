@@ -1,11 +1,11 @@
-@extends('Employer.auth.layouts.app')
+@extends('Seller.auth.layouts.app')
 @section('title', 'Login')
 
 @section('body')
 
 
 <div class="login-box-body">
-	<p class="login-box-msg">Enter your <b><span class="text-yellow">Employer</span> Email</b> to Reset your Password...</p>
+	<p class="login-box-msg">Enter your <b><span class="text-yellow">Seller</span> Email</b> to Reset your Password...</p>
 
 	@if (session('status'))
 	<div class="alert alert-success">
@@ -13,7 +13,7 @@
 	</div>
 	@endif
 
-	<form action="{{ route('employer.password.email') }}" method="post">
+	<form action="{{ route('seller.password.email') }}" method="post">
 
 	{{ csrf_field() }}
 

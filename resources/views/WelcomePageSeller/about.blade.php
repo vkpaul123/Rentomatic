@@ -1,4 +1,4 @@
-@extends('WelcomePageEmployer.layouts.app')
+@extends('WelcomePageSeller.layouts.app')
 @section('title', 'About')
 
 @section('select_HOME', '')

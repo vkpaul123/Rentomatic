@@ -1,4 +1,4 @@
-@extends('Employer.auth.layouts.app')
+@extends('Seller.auth.layouts.app')
 @section('title', 'Login')
 
 @section('body')
@@ -7,9 +7,9 @@
 	@if (Session::has('message'))
 		<div class="alert alert-success">{{ Session::get('message') }}</div>
 	@endif
-	<p class="login-box-msg"><b>Sign in</b> as <span class="text-yellow" style="font-weight: bold;">Employer</span> to start your session...</p>
+	<p class="login-box-msg"><b>Sign in</b> as <span class="text-yellow" style="font-weight: bold;">Seller</span> to start your session...</p>
 
-	<form action="{{ route('employer.login') }}" method="post">
+	<form action="{{ route('seller.login') }}" method="post">
 
 	{{ csrf_field() }}
 
@@ -47,7 +47,7 @@
 		</div>
 	</form>
 
-	<a href="{{ route('employer.password.request') }}">I forgot my password</a>
+	<a href="{{-- {{ route('seller.password.request') }} --}}">I forgot my password</a>
 
 	{{-- <div class="social-auth-links text-center">
 		<p>- OR -</p>
@@ -60,7 +60,7 @@
 
 	<div class="text-center">
 		<p>- OR -</p>
-		<a href="{{ route('employer.register') }}" class="text-center">
+		<a href="{{ route('seller.register') }}" class="text-center">
 			<button class="btn btn-info">Register a new membership</button>
 		</a>
 	</div>

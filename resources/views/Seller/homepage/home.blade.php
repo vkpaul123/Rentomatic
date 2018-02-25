@@ -1,42 +1,13 @@
-@extends('Employer.homepage.layouts.app')
-@section('title', 'Employers')
+@extends('Seller.homepage.layouts.app')
+@section('title', 'Sellers')
 
-@section('extraPageSpecificHeadContent')
-<link rel="stylesheet" href="{{asset('assets/userPage/bower_components/select2/dist/css/select2.min.css')}}">
 
-<style type="text/css">
-[class^='select2'] {
-  border-radius: 0px !important;
-}
-
-.select2-container {
-  padding: 0px;
-  border-width: 0px;
-}
-.select2-container .select2-choice {
-  height: 38px;
-  line-height: 38px;
-}
-
-.select2-container.form-control {
-  height: auto !important;
-}
-
-.form-control{
-  -webkit-appearance:none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-}
-</style>
-@endsection
 
 @section('body')
 <!-- Content Header (Page header) -->
 <section class="content-header">
   <h1>
-    <span style="color:#e08e0b;"><b>Employer</b> </span> Home
+    <span style="color:#e08e0b;"><b>Seller</b> </span> Home
     <small>Timeline</small>
   </h1>
   <ol class="breadcrumb">
@@ -71,7 +42,7 @@
           </li>
           <!-- /.timeline-label -->
           <!-- timeline item -->
-          @foreach ($popEmployers as $popEmployer)
+          {{-- @foreach ($popEmployers as $popEmployer)
           @if ($popEmployer->description)
           <li>
             <i class="fa fa-industry bg-yellow"></i>
@@ -90,7 +61,7 @@
           @if ($loop->index > 5)
           @break
           @endif
-          @endforeach
+          @endforeach --}}
           <!-- END timeline item -->
           <!-- timeline time label -->
           <li class="time-label">
@@ -98,7 +69,7 @@
               <strong>Vacancies</strong> at a glimpse
             </span>
           </li>
-          @forelse ($recVacancies as $recVacancy)
+          {{-- @forelse ($recVacancies as $recVacancy)
           <li>
             <i class="fa fa-briefcase bg-aqua"></i>
 
@@ -128,7 +99,7 @@
               </div>
             </div>
           </li>
-          @endforelse
+          @endforelse --}}
           <!-- /.timeline-label -->
           
           <!-- END timeline item -->
@@ -151,11 +122,11 @@
           </div>
           <div class="box-body">
 
-            @foreach ($recVacancies as $recVacancy)
+            {{-- @foreach ($recVacancies as $recVacancy)
             <a href="{{ route('vacancy.show', $recVacancy->id) }}">
               <button class="btn-lg btn-default">{{ $recVacancy->employers_id }}</button>
             </a> &nbsp &nbsp
-            @endforeach
+            @endforeach --}}
           </div>
         </div>
       </div>
@@ -167,9 +138,9 @@
           </div>
           <div class="box-body">
 
-            @foreach ($popEmployers as $popEmployer)
+            {{-- @foreach ($popEmployers as $popEmployer)
             <button class="btn btn-lg btn-default">{{ $popEmployer->companyname }}</button> &nbsp &nbsp
-            @endforeach
+            @endforeach --}}
 
           </div>
         </div>

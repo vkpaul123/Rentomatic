@@ -26,6 +26,9 @@ class CreateAddressesTable extends Migration
             $table->string('state');
             $table->string('pincode');
 
+            $table->double('lat', 18, 15)->nullable();
+            $table->double('lang', 18, 15)->nullable();
+
             $table->timestamps();
         });
     }

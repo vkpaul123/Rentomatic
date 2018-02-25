@@ -1,4 +1,4 @@
-@extends('WelcomePageEmployer.layouts.app')
+@extends('WelcomePageSeller.layouts.app')
 @section('title', 'Welcome')
 
 @section('select_HOME', 'class=active')
@@ -25,6 +25,7 @@
  		</div><!-- /row -->
  	</div> <!-- /container -->
  </div><!-- /headerwrap -->
+
 
 <!-- *****************************************************************************************************************
  SERVICE LOGOS
