@@ -21,7 +21,7 @@
 
           <div class="info-box-content">
             <span class="info-box-text">Employers</span>
-            <span class="info-box-number">{{ $employerCount }}</span>
+            <span class="info-box-number">{{-- {{ $employerCount }} --}}</span>
           </div>
         </div>
       </div>
@@ -32,7 +32,7 @@
 
           <div class="info-box-content">
             <span class="info-box-text">JobSeekers</span>
-            <span class="info-box-number">{{ $userCount }}</span>
+            <span class="info-box-number">{{-- {{ $userCount }} --}}</span>
           </div>
         </div>
       </div>
@@ -43,7 +43,7 @@
 
           <div class="info-box-content">
             <span class="info-box-text">JobSeeker PRofiles</span>
-            <span class="info-box-number">{{ $jobseekerProfile }}</span>
+            <span class="info-box-number">{{-- {{ $jobseekerProfile }} --}}</span>
           </div>
         </div>
       </div>
@@ -54,7 +54,7 @@
 
           <div class="info-box-content">
             <span class="info-box-text">Vacancies</span>
-            <span class="info-box-number">{{ $vacancyCount }}</span>
+            <span class="info-box-number">{{-- {{ $vacancyCount }} --}}</span>
           </div>
         </div>
       </div>
@@ -65,7 +65,7 @@
 
           <div class="info-box-content">
             <span class="info-box-text">Questions</span>
-            <span class="info-box-number">{{ $questionsCount }}</span>
+            <span class="info-box-number">{{-- {{ $questionsCount }} --}}</span>
           </div>
         </div>
       </div>
@@ -76,7 +76,7 @@
 
           <div class="info-box-content">
             <span class="info-box-text">Tests</span>
-            <span class="info-box-number">{{ $testCount }}</span>
+            <span class="info-box-number">{{-- {{ $testCount }} --}}</span>
           </div>
         </div>
       </div>
@@ -111,7 +111,7 @@
             </tr>              
           </thead>
           <tbody>
-            @forelse ($employers as $employer)
+            {{-- @forelse ($employers as $employer)
             <tr>
               <td>{{ $employer->id }}</td>
               <td>{{ $employer->firstname }} {{ $employer->lastname }}</td>
@@ -125,7 +125,7 @@
                   <center><i>No Employers registered!</i></center>
                 </td>
               </tr>
-              @endforelse
+              @endforelse --}}
             </tbody>
 
           </table>
@@ -160,7 +160,7 @@
               </thead>
 
               <tbody>
-                @forelse ($vacancies as $vacancy)
+                {{-- @forelse ($vacancies as $vacancy)
                 <tr>
                   <td>{{ $vacancy->id }}</td>
                   <td>{{ $vacancy->employers_id }}</td>
@@ -179,7 +179,7 @@
                       <center><i>No Employers registered!</i></center>
                     </td>
                   </tr>
-                  @endforelse
+                  @endforelse --}}
                   
                 </tbody>
 
@@ -204,7 +204,7 @@
                   </thead>
 
                   <tbody>
-                    @forelse ($users as $user)
+                    {{-- @forelse ($users as $user)
                     <tr>
                       <td>{{ $user->id }}</td>
                       <td>{{ $user->firstname }} {{$user->lastname}}</td>
@@ -217,7 +217,7 @@
                           <center><i>No Employers registered!</i></center>
                         </td>
                       </tr>
-                      @endforelse
+                      @endforelse --}}
                     </tbody>
 
                   </table>
@@ -241,7 +241,7 @@
               <!-- /. tools -->
             </div>
             <!-- /.box-header -->
-            <form id="scribblePadForm" method="post" action="{{ route('admin.saveNote') }}">
+            <form id="scribblePadForm" method="post" action="{{-- {{ route('admin.saveNote') }} --}}">
               {{csrf_field()}}
               {{method_field('PUT')}}
               <div class="box-body pad">

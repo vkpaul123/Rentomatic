@@ -23,12 +23,12 @@
 			</span>
 			@endif
 		</div>
-		<div class="form-group has-feedback{{ $errors->has('phoneNo') ? ' has-error' : '' }}">
-			<input type="text" name="phoneNo" class="form-control" placeholder="Phone Number" value="{{ old('phoneNo') }}" required autofocus>
+		<div class="form-group has-feedback{{ $errors->has('phno') ? ' has-error' : '' }}">
+			<input type="text" name="phno" class="form-control" placeholder="Phone Number" value="{{ old('phno') }}" required autofocus>
 			<span class="glyphicon glyphicon-phone form-control-feedback"></span>
-			@if ($errors->has('phoneNo'))
+			@if ($errors->has('phno'))
 			<span class="help-block">
-				<strong>{{ $errors->first('phoneNo') }}</strong>
+				<strong>{{ $errors->first('phno') }}</strong>
 			</span>
 			@endif
 		</div>
