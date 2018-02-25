@@ -48,6 +48,9 @@ Route::group(['namespace' => 'Seller'], function() {
 		Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('seller.register');
 		Route::post('register', 'Auth\RegisterController@register');
 		Route::post('logout', 'Auth\LoginController@logout')->name('seller.logout');
+
+		//	Property Routes
+		Route::resource('property', 'PropertyController');
 	});
 });
 

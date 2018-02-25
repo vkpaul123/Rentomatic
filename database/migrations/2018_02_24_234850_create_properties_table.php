@@ -26,6 +26,19 @@ class CreatePropertiesTable extends Migration
             $table->string('highlights')->nullable();
             $table->boolean('sold')->nullable();
 
+            $table->string('addressText');
+            $table->string('locality');
+            $table->string('landmark1');
+            $table->string('landmark2')->nullable();
+            $table->string('street');
+            $table->string('district');
+            $table->string('city');
+            $table->string('state');
+            $table->string('pincode');
+
+            $table->double('lat', 18, 15)->nullable();
+            $table->double('lang', 18, 15)->nullable();
+
             $table->timestamps();
         });
     }
