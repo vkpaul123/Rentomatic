@@ -18,7 +18,6 @@ class CreatePropertiesTable extends Migration
 
             $table->string('propertyType');
             $table->integer('seller_id')->nullable();
-            $table->integer('address_id')->nullable();
             $table->double('price', 10, 2)->nullable();
             $table->string('photo1')->nullable();
             $table->string('photo2')->nullable();

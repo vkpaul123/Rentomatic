@@ -11,7 +11,7 @@
         @endisset
       </div>
       <div class="pull-left info">
-        <p><a href="/employer/home" style="color: white;">{{ Auth::user()->firstname." ".Auth::user()->lastname }}</a></p>
+        <p><a href="/employer/home" style="color: white;">{{ Auth::user()->name }}</a></p>
         <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
       </div>
     </div>

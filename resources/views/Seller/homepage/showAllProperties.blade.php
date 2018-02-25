@@ -26,11 +26,14 @@
 		<div class="box-header with-border">
       <div class="container-fluid">
         <div class="row">
-         <h3><strong class="text-warning">My Properties</strong></h3>
+         <h3>
+          <strong class="text-warning">My Properties</strong>
+         <a href="{{ route('property.create') }}" class="btn btn-warning pull-right"><strong>Add Property To-Let</strong></a>
+        </h3>
        </div>
      </div>
    </div>
-   <div class="box-body">
+   <div class="box-body table-responsive">
      <table id="questionnare" class="table table-bordered table-hover">
       <thead>
         <tr>
@@ -43,41 +46,20 @@
         </tr>
       </thead>
       <tbody>
-        {{-- @foreach($jobApplications as $jobApplication)
-        <tr>
-          <td>{{ $jobApplication->id }}</td>
-          <td>
-            <a href="{{ route('employer.viewJobseekerProfile', $jobApplication->jobseeker_profile_id->id) }}">
-              {{ $jobApplication->jobseeker_profile_id->firstname }} {{ $jobApplication->jobseeker_profile_id->middlename }} {{ $jobApplication->jobseeker_profile_id->lastname }}
-            </a>
-          </td>
-          @if($vacancy->testrequired)
-          <td>{{ $jobApplication->marks }}</td>
-          <td><span class="@if($jobApplication->testResult == 'Pass') text-success @else text-danger @endif">{{ $jobApplication->testResult }}</span></td>
-          @endif
-          <td><span class="@if($jobApplication->applicationStatus == 'Applied' || $jobApplication->applicationStatus == 'Finished Test') text-yellow @elseif($jobApplication->applicationStatus == 'Rejected' || $jobApplication->applicationStatus=='Disqualified') text-red @elseif($jobApplication->applicationStatus == 'Approved') text-green @else text-muted @endif">
-                    <strong>{{ $jobApplication->applicationStatus }}</strong>
-                  </span></td>
-          <td>
-            <a href="" onclick="approveApp{{ $jobApplication->id }}(); document.getElementById('setApplicationStatus-{{ $jobApplication->id }}').submit();"><button class="btn-xs btn btn-success"><strong><i class="fa fa-check"></i>&nbsp Approve</strong></button></a> &nbsp 
-            <a href="" onclick="rejectApp{{ $jobApplication->id }}(); document.getElementById('setApplicationStatus-{{ $jobApplication->id }}').submit();"><button class="btn-xs btn btn-danger"><strong><i class="fa fa-close"></i>&nbsp Reject</strong></button></a>
+        @foreach ($properties as $property)
+          <tr>
+            <td>{{ $loop->iteration }}</td>
+            <td>{{ $property->propertyType }}</td>
+            <td>{{ $property->addressText }}, {{ $property->locality }}, {{ $property->landmark1 }}, {{ $property->landmark2 }}, {{ $property->street }}, {{ $property->district }}, {{ $property->city }} , {{ $property->state }}, {{ $property->pincode }}</td>
+            <td>{{ $property->price }}</td>
+            <td>{{ $property->sold }}</td>
+            <td>
+              <a href="">View</a> &nbsp | &nbsp
+              <a href="">Delete</a>
+            </td>
 
-            <form action="{{ route('vacancy.setApplicationStatus', $jobApplication->id) }}" style="display: none;" id="setApplicationStatus-{{ $jobApplication->id }}" method="post">
-              {{csrf_field()}}
-              {{method_field('PUT')}}
-              <input type="hidden" name="applicationStatus[{{ $jobApplication->id }}]" id="applicationStatus[{{ $jobApplication->id }}]" value="">
-
-              <input type="hidden" id="mailFrom" name="mailFrom" value="contact.jobs4mobs@gmail.com">
-              <input type="hidden" id="fromName" name="fromName" value="Admin">
-              <input type="hidden" id="mailTo" name="mailTo" value="{{ $jobApplication->jobseeker_profile_id->user_id->email }}">
-              <input type="hidden" id="mailToName" name="mailToName" value="{{ $jobApplication->jobseeker_profile_id->firstname }}">
-              <input type="hidden" name="toSubject" id="toSubject" value="Job Application Status Update">
-              <input type="hidden" name="mailBody1[{{ $jobApplication->id }}]" id="mailBody1[{{ $jobApplication->id }}]" value="">
-            </form>
-          </td>
-        </tr>
-        @endforeach --}}
-
+          </tr>
+        @endforeach
       </tbody>
       <tfoot>
         <tr>
