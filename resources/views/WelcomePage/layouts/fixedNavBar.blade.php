@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/" style="padding-top: 10px;"><img src="{{asset('assets/staticImages/Logos/Logo_Nav.png')}}" alt="Logo_Nav.png" width="175">{{-- SOLID. --}}</a>
+      <a class="navbar-brand" href="/" style="margin-top: -25px;"><h2><b>Rentomatica</b></h2>{{-- SOLID. --}}</a>
     </div>
     <div class="navbar-collapse collapse navbar-right">
       <ul class="nav navbar-nav">

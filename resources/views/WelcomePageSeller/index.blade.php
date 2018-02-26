@@ -15,9 +15,10 @@
  			<div class="col-lg-8 col-lg-offset-2">
  				<h3>India's leading website</h3>
  				{{-- <h1>Eyecatching Bootstrap 3 Theme.</h1> --}}
- 				<img src="{{ asset('assets/staticImages/Logos/Logo_Main_Whitened_Emp.png') }}" alt="Logo" width="85%">
- 				<h5>Don't wait for long,register and find your dream job.</h5>
- 				<h5>Upload your resume today!</h5>				
+ 				<img src="{{ asset('assets/staticImages/Logos/rentomaticalogo.png') }}" alt="Logo"
+ 				height="150%" width="150%" style="margin-top: -50px;">
+ 				<h5>Don't wait for long,register and find your dream home.</h5>
+ 				<!--<h5>Upload your resume today!</h5>-->				
  			</div>
  			<!--<div class="col-lg-8 col-lg-offset-2 himg">
  				<img src="{{ asset('assets/welcomePage/img/browser.png') }}" class="img-responsive">
@@ -238,7 +239,7 @@
 	 		<div class="col-lg-4 col-lg-offset-1">
 		 		<h4>Get to know us!</h4>
 		 		<p>
-Jobs4mobs, India's leading online career and recruitment resource with its cutting edge technology provides relevant profiles to employers and relevant jobs to jobseekers across industry verticals, experience levels and geographies. More than 200 million people have registered on the Monster Worldwide network. </p> 
+Rentomatica is only an intermediary offering its platform to facilitate the transactions between Seller and Customer/Buyer/User and is not and cannot be a party to or control in any manner any transactions between the Seller and the Customer/Buyer/User. Rentomatica shall neither be responsible nor liable to mediate or resolve any disputes or disagreements between the Customer/Buyer/User and the Seller and both Seller and Customer/Buyer/User shall settle all such disputes without involving Rentomatica in any manner.</p> 
  				<p><br/><a href="about" class="btn btn-theme">More Info</a></p>
 	 		</div>
 	 		

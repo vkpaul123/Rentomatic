@@ -32,7 +32,7 @@
 	 		<div class="col-lg-5 col-lg-offset-1">
 			 	<div class="spacing"></div>
 		 		<h4>REGISTER</h4><hr>
-		 		<p>The   registeration   process   is   pretty   simple .   All   you   need   to   do   is   click   the   login   form   below   which   there   is   a register   button.  Ofcourse   you   must   login   into   the   apprpriate   portal,  that is Employer or Jobseeker </p><br>
+		 		<p>The   registeration   process   is   pretty   simple .   All   you   need   to   do   is   click   the   login   form   below   which   there   is   a register   button.  Ofcourse   you   must   login   into   the   apprpriate   portal,  that is Buyer or Seller </p><br>
 		 		<h4>PROCESS</h4><hr>
 		 		<p>Please enter valid details and information else you could be blocked by our intelligent middleware ;) </p>
 		 	</div>

@@ -7,7 +7,7 @@ FOOTER
 			<div class="col-lg-4">
 				<h4>About</h4>
 				<div class="hline-w"></div>
-				<p>Jobs4mobs is  the easiest way for you to find your dream job and also finding the perfect employee for your company.Register and choose your eliible candidate and companies!</p>
+				<p>Rentomatica is  the easiest way for you to find your dream home and also finding the perfect tenant for your house.Register and choose your eliible tenant and homes!</p>
 			</div>
 			<div class="col-lg-4">
 				<h4>Social Links</h4>

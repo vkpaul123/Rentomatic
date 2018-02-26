@@ -6,7 +6,7 @@
 <body class="hold-transition login-page">
 	<div class="login-box">
 		<div class="login-logo">
-			<a href="/seller"><img src="{{ asset('assets/staticImages/Logos/Logo_Main.png') }}" height="80"></a>
+			<a href="/seller"><img src="{{ asset('assets/staticImages/Logos/rentomaticalogincdc.png') }}" height="140"></a>
 		</div>
 		<!-- /.login-logo -->
 

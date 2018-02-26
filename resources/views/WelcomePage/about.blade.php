@@ -30,9 +30,11 @@
 	 		
 	 		<div class="col-lg-6" style="text-align: justify;">
 	 			<h4>Get to know us!.</h4>
-	 			<p>Jobs4mobs, India's leading online career and recruitment resource with its cutting edge technology provides relevant profiles to employers and relevant jobs to jobseekers across industry verticals, experience levels and geographies. More than 200 million people have registered on the  network. </p>
-	 			<p>Jobs4mobs provides the widest and most sophisticated job seeking, career management, recruitment and talent management capabilities globally. Jobs4mobs started off recently yet managed to turn a 1000 heads . Headquartered in Banglore.</p>
-	 			<p>We continually seek strategic ways to expand our offerings to employers and job seekers, and have ensured that we have the processes, technology and infrastructure to deliver the highest level of service and support to our customers.</p>
+	 			<p> Rentomatica is only an intermediary offering its platform to facilitate the transactions between Seller and Customer/Buyer/User and is not and cannot be a party to or control in any manner any transactions between the Seller and the Customer/Buyer/User. Rentomatica shall neither be responsible nor liable to mediate or resolve any disputes or disagreements between the Customer/Buyer/User and the Seller and both Seller and Customer/Buyer/User shall settle all such disputes without involving Rentomatica in any manner. </p>
+	 			<p>Rentomatica design is based on rigorous research, unique product developments, and innovative initiative which has been readily accepted by users. In an attempt to best serve the users, features on the Rentomatica realty portal are constantly invented, evaluated and upgraded. 
+
+                It is here that top-notch properties of major Indian metros are showcased for audiences in India .	 Headquartered in Banglore.</p>
+	 			<!--<p>We continually seek strategic ways to expand our offerings to employers and job seekers, and have ensured that we have the processes, technology and infrastructure to deliver the highest level of service and support to our customers.</p>-->
 	 			<p><br/><a href="contact" class="btn btn-theme">Contact Us</a></p>
 	 		</div>
 	 	</div>
@@ -41,6 +43,7 @@
 	<!-- *****************************************************************************************************************
 	 TEEAM MEMBERS
 	 ***************************************************************************************************************** -->
+<!--	 
 <div class="container mtb">
 	 	<div class="row centered">
 		 	<h3 class="mb">MEET OUR TEAM</h3>
@@ -50,41 +53,42 @@
 				<img src="{{asset('assets/welcomePage/img/team/team01.jpg')}}" alt="">
 					<div class="he-view">
 						
-					</div><!-- he view -->		
-				</div><!-- he wrap -->
-				<h4>Vikramsinh<br>Dantkale</h4>
+					</div><! he view -->		
+				<!--</div><! he wrap -->
+				<!--<h4>Vikramsinh<br>Dantkale</h4>
 				<h5 class="ctitle">CEO</h5>
 				<p>Jobs4mobs - Find Your dream job TODAY!</p>
 				<div class="hline"></div>
-		 	</div><! --/col-lg-4 -->
+		 	</div><! /col-lg-4 
 
 		 	<div class="col-lg-2 col-md-2 col-sm-2">
 				<div class="he-wrap tpl6">
 				<img src="{{asset('assets/welcomePageEmployer/img/team/team02.jpg')}}" alt="">
 					<div class="he-view">
 						
-					</div><!-- he view -->		
-				</div><!-- he wrap -->
+					</div><! he view >		
+				</div><! he wrap >
 				<h4>Amritha<br>AP</h4>
 				<h5 class="ctitle">LEAD DESIGNER</h5>
 				<p>Jobs4mobs - Find Your dream job TODAY!</p>
 				<div class="hline"></div>
-		 	</div><! --/col-lg-4 -->
+		 	</div><! /col-lg-4 >
 
 		 	<div class="col-lg-2 col-md-2 col-sm-2">
 				<div class="he-wrap tpl6">
 				<img src="assets/welcomePage/img/team/team03.jpg" alt="">
 						
-				</div><!-- he wrap -->
+				</div><! he wrap >
 				<h4>Sandeep<br>Jose</h4>
 				<h5 class="ctitle">LEAD DEVELOPER</h5>
 				<p>Jobs4mobs - Find Your dream job TODAY!</p>
 				<div class="hline"></div>
-		 	</div><! --/col-lg-3 -->	 	
+		 	</div><! /col-lg-3 >	 	
 		 	
-	 	</div><! --/row -->
-	 </div><! --/container -->
+	 	</div><! /row >
+	 </div><! /container -->
 	 
+
 	<!-- *****************************************************************************************************************
 	 TESTIMONIALS
 	 ***************************************************************************************************************** -->
