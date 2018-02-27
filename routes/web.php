@@ -23,12 +23,13 @@ Route::get('/seller/contact', 'WelcomePageSellerController@contact');
 
 
 //	API for the mofo Android App
-Route::get('/getUserJson/{id}', 'TestGetJSONWithURL@sendValuesOfUser');
+Route::get('/getUserJson/{email}', 'TestGetJSONWithURL@sendValuesOfUser');
 
 Route::get('/getAllProperties', 'User\ApiController@getAllProperties');
 Route::get('/appSignUp/{email}/{name}', 'User\ApiController@appSignUp');
 Route::get('/appSignUpSeller/{email}/{name}', 'User\ApiController@appSignUpSeller');
 Route::get('/app/property/{property_id}', 'User\ApiController@getProperty');
+// Route::get('/app/property/');
 
 //	URL to check if User is Registered or Not
 Route::get('/getUserRegisteredJson/{email}', 'CheckIfLoggedInController@checkRegistration');

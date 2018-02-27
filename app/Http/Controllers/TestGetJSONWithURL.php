@@ -7,9 +7,9 @@ use Illuminate\Http\Request;
 
 class TestGetJSONWithURL extends Controller
 {
-    public function sendValuesOfUser($id)
+    public function sendValuesOfUser($email)
     {
-    	$user = User::find($id);
+    	$user = User::where('email', '=',$email)->get();
 
     	return $user->toJson();
     }

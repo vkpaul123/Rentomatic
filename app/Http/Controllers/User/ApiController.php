@@ -45,8 +45,8 @@ class ApiController extends Controller
     	return 1;
     }
 
-    public function getProperty($id) {
-    	$property = Property::find($id);
+    public function getProperty($property_id) {
+    	$property = Property::find($property_id);
 
     	return $property->toJson();
     }
