@@ -20,7 +20,7 @@
   <div class="container-fluid">
     <div class="box box-primary">
       <div class="box-header with-border">
-        <a href="/home/propertySearch">
+        <a href="/home/vacancySearchResults">
           <button class="btn btn-default btn-lg btn-block"><strong><i class="fa fa-search"></i>&nbsp &nbsp<span class="text-primary">Search Properties</span></strong></button>
         </a>
       </div>
@@ -66,7 +66,7 @@
           <!-- /.timeline-label -->
           <li class="time-label">
             <span class="bg-purple">
-              Results for your recent <strong>Job Applications</strong>
+              Results for your recent <strong>Property Searches</strong>
             </span>
           </li>
           <!-- timeline item -->
@@ -97,7 +97,7 @@
 
             <div class="timeline-item">
               <div class="timeline-header no-border">
-                View all your Job Applications in
+                View all your Property Requests in
                 
               </div>
                 {{-- <div class="timeline-footer">

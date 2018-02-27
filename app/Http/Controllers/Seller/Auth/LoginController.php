@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Seller\Auth;
 
+use App\Adminlog;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
