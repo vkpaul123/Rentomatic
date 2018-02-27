@@ -10,15 +10,15 @@ use Illuminate\Http\Request;
 class ApiController extends Controller
 {
     public function getAllProperties() {
-    	$properties = Property::all();
+    	$properties = Property::where('sold', '=', '0')->get();
 
     	return $properties->toJson();
     }
 
-    public function appSignUpPwd($email, $password) {
-    	$user = new User;
-    	$user->name = 
-    }
+    // public function appSignUpPwd($email, $password) {
+    // 	$user = new User;
+    // 	$user->name = 
+    // }
 
     public function appSignUp($email, $name) {
     	$user = new User;
@@ -43,5 +43,11 @@ class ApiController extends Controller
     	$seller->save();
 
     	return 1;
+    }
+
+    public function getProperty($id) {
+    	$property = Property::find($id);
+
+    	return $property->toJson();
     }
 }
