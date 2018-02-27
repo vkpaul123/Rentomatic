@@ -30,4 +30,18 @@ class ApiController extends Controller
 
     	return 1;
     }
+
+    public function appSignUpSeller($email, $name) {
+    	$seller = new Seller;
+    	$seller->email = $email;
+    	$seller->name = $name;
+
+    	$seller->phno = "000000";
+    	$seller->adharno = "000000000000";
+    	$seller->password = bcrypt(str_random(40));
+
+    	$seller->save();
+
+    	return 1;
+    }
 }

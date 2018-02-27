@@ -27,6 +27,7 @@ Route::get('/getUserJson/{id}', 'TestGetJSONWithURL@sendValuesOfUser');
 
 Route::get('/getAllProperties', 'User\ApiController@getAllProperties');
 Route::get('/appSignUp/{email}/{name}', 'User\ApiController@appSignUp');
+Route::get('/appSignUpSeller/{email}/{name}', 'User\ApiController@appSignUpSeller');
 
 //	URL to check if User is Registered or Not
 Route::get('/getUserRegisteredJson/{email}', 'CheckIfLoggedInController@checkRegistration');
