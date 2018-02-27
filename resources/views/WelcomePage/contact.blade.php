@@ -124,10 +124,10 @@
  				Karnataka-560029<br/>
  			</p>
  			<p>
- 				Email: contact.jobs4mobs@gmail.com<br/>
- 				Tel: +91 9969453212
+ 				Email: vkpaul123@gmail.com<br/>
+ 				Tel: +91 8296765476
  			</p>
- 			<p>India's leading website Jobs4Mobs isn't just online.Feel free to drop in by our office.We'd be more than happy to acknowldege your queries! </p>
+ 			<p>Rentomatica is the easiest way for you to find your dream home and also finding the perfect tenant for your house.Register and choose your eliible tenant and homes!</p>
  		</div>
  	</div><! --/row -->
  </div><! --/container -->
