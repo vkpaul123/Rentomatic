@@ -9,7 +9,7 @@
 <!-- /.login-logo -->
 
 <div class="login-box-body">
-	<p class="login-box-msg"><b>Sign in</b> as <span style="color: #d73925; font-weight: bold;">Admin</span> to start your session...</p>
+	<p class="login-box-msg"><b>Sign in</b> as <span style="color: #d73925; font-weight: bold;">Admin</span> to start your session....</p>
 
 	<form action="{{ route('admin.login') }}" method="post">
 
