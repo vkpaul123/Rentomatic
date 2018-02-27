@@ -2,10 +2,32 @@
 
 namespace App\Http\Controllers\User;
 
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Property;
+use App\User;
+use Illuminate\Http\Request;
 
 class ApiController extends Controller
 {
-    //
+    public function getAllProperties() {
+    	$properties = Property::all();
+
+    	return $properties->toJson();
+    }
+
+    public function appSignUpPwd($email, $password) {
+    	$user = new User;
+    	$user->name = 
+    }
+
+    public function appSignUp($email, $name) {
+    	$user = new User;
+    	$user->name = $name;
+    	$user->email = $email;
+    	$user->phno = "000000";
+    	$user->password = bcrypt(str_random(40));
+    	$user->save();
+
+    	return 1;
+    }
 }
