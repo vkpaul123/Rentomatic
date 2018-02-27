@@ -25,6 +25,8 @@ Route::get('/seller/contact', 'WelcomePageSellerController@contact');
 //	Test to get values is JSON
 Route::get('/getUserJson/{id}', 'TestGetJSONWithURL@sendValuesOfUser');
 
+// Route::get('/getAllProperties', 'User');
+
 //	URL to check if User is Registered or Not
 Route::get('/getUserRegisteredJson/{email}', 'CheckIfLoggedInController@checkRegistration');
 
