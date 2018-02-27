@@ -20,6 +20,8 @@ class CreateAdminsTable extends Migration
             $table->string('phno');
             $table->string('email')->unique();
             $table->string('password');
+
+            $table->string('notes')->nullable();
             $table->rememberToken();
             
             $table->timestamps();

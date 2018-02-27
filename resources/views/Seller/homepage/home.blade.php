@@ -18,14 +18,14 @@
 <!-- Main content -->
 <section class="content">
 
-  <div class="container-fluid">
+  {{-- <div class="container-fluid">
     <div class="box box-warning">
       <div class="box-header with-border">
         <a href="jobseekerSearchResults">
           <button class="btn btn-default btn-lg btn-block"><strong><i class="fa fa-search"></i>&nbsp &nbsp<span class="text-warning">Search Jobseekers</span></strong></button>
         </a>
       </div>
-    </div>
+    </div> --}}
 
     {{-- TIMELINE STARTS HERE ******************************************** --}}
 
@@ -37,7 +37,7 @@
           <!-- timeline time label -->
           <li class="time-label">
             <span class="bg-red">
-              <strong>Employers</strong> that might Interest you
+              <strong>Upcoming client meetings</strong>
             </span>
           </li>
           <!-- /.timeline-label -->
@@ -66,7 +66,7 @@
           <!-- timeline time label -->
           <li class="time-label">
             <span class="bg-green">
-              <strong>Vacancies</strong> at a glimpse
+              <strong>Properties</strong> at a glimpse
             </span>
           </li>
           {{-- @forelse ($recVacancies as $recVacancy)
@@ -118,7 +118,7 @@
       <div class="col-md-4">
         <div class="box box-success">
           <div class="box-header with-border">
-            <h3>Recent Job Vacancies</h3>
+            <h3>Recent Property uploads</h3>
           </div>
           <div class="box-body">
 
@@ -134,7 +134,7 @@
       <div class="col-md-4">
         <div class="box box-warning">
           <div class="box-header with-border">
-            <h3>Popular Employers</h3>
+            <h3>Popular Sellers</h3>
           </div>
           <div class="box-body">
 
@@ -147,7 +147,7 @@
       </div>
 
     </div>
-  </div>
+  {{-- </div> --}}
 
 </section>
 <!-- /.content -->

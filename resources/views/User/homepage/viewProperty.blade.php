@@ -1,11 +1,11 @@
-@extends('Seller.homepage.layouts.app')
-@section('title', 'Sellers')
+@extends('User.homepage.layouts.app')
+@section('title', 'Users')
 
 @section('body')
 <!-- Content Header (Page header) -->
 <section class="content-header">
   <h1>
-    <span style="color:#e08e0b;"><b>Seller</b> </span> View Property
+    <span class="text-primary"><b>User</b> </span> View Property
     <small>see your advertized property</small>
   </h1>
   <ol class="breadcrumb">
@@ -116,8 +116,20 @@
                 
               </div>
               <hr>
-              <a href="{{ route('property.edit', $property->id) }}" class="btn btn-block btn-warning"><strong>Edit Property</strong></a>
-              <a href="{{ route('property.meetings', $property->id) }}" class="btn btn-block btn-info"><strong>View All Requests</strong></a>
+              @if (Session::has('messageSuccess'))
+                <div class="alert alert-success">{!! Session::get('messageSuccess') !!}
+                  <button type="button" class="close" data-dismiss="alert"><i class="fa fa-times"></i></button>
+                </div>
+              @endif
+              <form action="{{ route('property.request.meeting') }}" method="post">
+                {{ csrf_field() }}
+
+                <input type="hidden" value="{{ $property->id }}" name="property_id">
+
+                <input type="submit" value="Request Meeting" class="btn btn-block btn-warning" @isset ($existingReq)
+                    disabled 
+                @endisset>
+              </form>
             </div>
           </div>
         </div>

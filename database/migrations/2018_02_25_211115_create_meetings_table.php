@@ -17,6 +17,7 @@ class CreateMeetingsTable extends Migration
             $table->increments('id');
             $table->integer('user_id')->nullable();
             $table->integer('property_id')->nullable();
+            $table->string('status')->nullable();
             $table->timestamps();
         });
     }

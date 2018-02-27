@@ -16,7 +16,7 @@ class CreateAdminlogsTable extends Migration
         Schema::create('adminlogs', function (Blueprint $table) {
             $table->increments('id');
 
-            $table->integer('user_id')->nullable();
+            $table->string('user_id')->nullable();
             $table->string('user_type')->nullable();
             $table->string('ip_address')->nullable();
 

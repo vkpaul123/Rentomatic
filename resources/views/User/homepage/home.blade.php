@@ -20,7 +20,7 @@
   <div class="container-fluid">
     <div class="box box-primary">
       <div class="box-header with-border">
-        <a href="/home/vacancySearchResults">
+        <a href="/home/propertySearch">
           <button class="btn btn-default btn-lg btn-block"><strong><i class="fa fa-search"></i>&nbsp &nbsp<span class="text-primary">Search Properties</span></strong></button>
         </a>
       </div>

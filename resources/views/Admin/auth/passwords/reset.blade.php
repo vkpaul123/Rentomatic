@@ -4,7 +4,7 @@
 @section('body')
 
 <div class="login-logo">
-	<a href="/"><img src="{{ asset('assets/staticImages/Logos/Logo_Main.png') }}" height="80"></a>
+	<a href="/"><img src="{{ asset('assets/staticImages/Logos/rentomaticalogincdc.png') }}" height="140"></a>
 </div>
 <!-- /.login-logo -->
 

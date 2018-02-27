@@ -34,6 +34,13 @@ Route::group(['namespace' => 'User'], function() {
 	Auth::routes();
 	
 	Route::get('/home', 'HomeController@index')->name('home');
+
+	Route::get('/home/propertySearch', 'HomeController@propertySearchResults');
+	Route::get('/home/propertySearch/{id}', 'HomeController@viewProperty');
+
+	Route::post('/home/propertyView/request', 'PropertyMeetingsController@requestMeeting')->name('property.request.meeting');
+
+	Route::get('/home/myMeetings', 'HomeController@showAllMeetings');
 });
 
 //	Seller Routes
@@ -51,6 +58,10 @@ Route::group(['namespace' => 'Seller'], function() {
 
 		//	Property Routes
 		Route::resource('property', 'PropertyController');
+
+		Route::get('/property/{id}/requests','PropertyMeetingsController@showAllMeetings')->name('property.meetings');
+
+		Route::put('/property/{id}/requests/setRequestStatus', 'PropertyMeetingsController@setRequestStatus')->name('set.request.status');
 	});
 });
 
@@ -59,6 +70,10 @@ Route::group(['namespace' => 'Admin'], function() {
 	
 	Route::prefix('admin')->group(function() {
 		Route::get('/', 'HomeController@index')->name('admin.home');
+
+		Route::put('/saveNote', 'HomeController@saveNote')->name('admin.saveNote');
+
+		Route::get('/adminlogs', 'HomeController@showLogs')->name('admin.adminlogs');
 
 		//	Authentication Routes
 		Route::get('login', 'Auth\LoginController@showLoginForm')->name('admin.login');

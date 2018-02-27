@@ -43,9 +43,7 @@
             </li>
             <!-- Menu Body -->
             <li class="user-footer">
-              <div class="pull-left">
-                <a href="{{-- {{ route('employerProfile.show', Auth::user()->id) }} --}}" class="btn btn-default">Profile</a>
-              </div>
+              
               <div class="pull-right">
                 <a href="{{ route('seller.logout') }}"
                 onclick="event.preventDefault();

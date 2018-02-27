@@ -2,9 +2,9 @@
   <!-- Logo -->
   <a href="{{ route('admin.home') }}" class="logo">
     <!-- mini logo for sidebar mini 50x50 pixels -->
-    <span class="logo-mini">J<b><span style="color:gold;">4</span></b>M</span>
+    <span class="logo-mini"><h2><strong>R</strong></h2><b><span style="color:gold;"></span></b></span>
     <!-- logo for regular state and mobile devices -->
-    <span class="logo-lg"><img src="{{asset('assets/staticImages/Logos/Logo_Nav.png')}}" alt="Logo_Nav.png" width="175"></span>
+    <span class="logo-lg"><h2><strong> Rentomatica </strong></h2></span>
   </a>
   <!-- Header Navbar: style can be found in header.less -->
   <nav class="navbar navbar-static-top">
