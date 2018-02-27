@@ -90,7 +90,7 @@
 					<label for="propertyType" class="col-md-3 control-label">Property Type<span class="text-red">*</span></label>
 					<div class="col-md-6">
 						<select style="width: 100%;" class="select2 form-control" id="propertyType" name="propertyType">
-							<option value="">Choose an industry…</option>
+							<option value="">Choose an Type...</option>
 							<option value="1BHK">1BHK</option>
 							<option value="2BHK">2BHK</option>
 							<option value="3BHK">3BHK</option>
@@ -215,7 +215,7 @@
 				<div class="form-group{{ $errors->has('sold') ? ' has-error' : '' }}">
 					<label for="sold" class="col-md-3 control-label">Sold Status</label>
 					<div class="col-md-6">
-						<input type="text" class="form-control pull-right" id="sold" name="sold" placeholder="Pincode" min="0" value="{{ old('sold') }}" disabled>
+						<input type="text" class="form-control pull-right" id="sold" name="sold" placeholder="Status" min="0" value="{{ old('sold') }}" disabled>
 					</div>
 				</div>
 

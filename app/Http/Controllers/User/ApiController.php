@@ -15,9 +15,9 @@ class ApiController extends Controller
     	return $properties->toJson();
     }
 
-    // public function appSignUpPwd($email, $password) {
-    // 	$user = new User;
-    // 	$user->name = 
+    // public function FunctionName($value='')
+    // {
+    // 	# code...
     // }
 
     public function appSignUp($email, $name) {
