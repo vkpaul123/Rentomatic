@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
+use App\Meeting;
 use App\Property;
 use App\User;
 use Illuminate\Http\Request;
@@ -15,10 +16,47 @@ class ApiController extends Controller
     	return $properties->toJson();
     }
 
-    // public function FunctionName($value='')
-    // {
-    // 	# code...
-    // }
+    public function setNewMeetingStatus($userId, $propertyId) {
+    	$meeting = new Meeting;
+    	$meeting->user_id = $userId;
+    	$meeting->property_id = $propertyId;
+    	$meeting->status = "pending";
+    	$meeting->save();
+
+    	return 1;
+    }
+
+    public function setCurrentMeetingStatus($meetingId, $status) {
+    	$meeting = Meeting::find($meetingId);
+    	$property = Property::find($meeting->property_id);
+    	if($status == "sold") {
+    		if($property->sold == 1) {
+    			return 0;
+    		} else {
+
+	    		$meeting->status = $status;
+
+	    		$meeting->save();
+
+	    		$property->sold = 1;
+	    		$property->save();
+    		}
+    	} elseif ($status == "revoked") {
+    		if($property->sold == 0) {
+    			return 0;
+    		} else {
+	    		$meeting->status = $status;
+
+	    		$meeting->save();
+
+	    		$property->sold = 0;
+	    		$property->save();
+	    	}
+    	}
+		$meeting->status = $status;
+		$meeting->save();
+    	return 1;
+    }
 
     public function appSignUp($email, $name) {
     	$user = new User;
